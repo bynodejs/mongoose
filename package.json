@@ -1,0 +1,31 @@
+{
+  "name": "mongoose-example",
+  "version": "0.0.0",
+  "private": true,
+  "description": "mongoose-example",
+  "author": "AGUMON",
+  "license": "ISC",
+  "scripts": {
+    "start": "NODE_ENV=production node ./bin/www",
+    "dev": "NODE_ENV=development nodemon ./bin/www"
+  },
+  "dependencies": {
+    "debug": "~2.6.9",
+    "ejs": "^2.6.2",
+    "express": "~4.16.1",
+    "mongoose": "^5.6.10",
+    "mongoose-sequence": "^5.1.0",
+    "morgan": "~1.9.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bynodejs/mongoose.git"
+  },
+  "bugs": {
+    "url": "https://github.com/bynodejs/mongoose/issues"
+  },
+  "homepage": "https://github.com/bynodejs/mongoose#readme"
+}
