@@ -2,8 +2,11 @@
 
 // require modules
 const express = require("express"),
-  path = require("path"),
   logger = require("morgan"),
+  path = require("path"),
+  helmet = require("helmet"),
+  cors = require("cors"),
+  hpp = require("hpp"),
   app = express();
 
 // require lib
@@ -18,6 +21,10 @@ app.use(logger("dev"));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, "public")));
+
+app.use(hpp());
+app.use(cors());
+app.use(helmet());
 
 app.use("/", require("./routes/index"));
 app.use("/boards", require("./routes/boards"));
