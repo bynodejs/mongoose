@@ -1,58 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<!-- head -->
-<head>
+  <!-- head -->
+  <head>
     <title>몽고디비 게시판</title>
-</head>
+    <link rel="stylesheet" type="text/css" href="css/default.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.datatables.net/v/dt/dt-1.10.20/datatables.min.css"
+    />
+  </head>
 
-<!-- body -->
-<body>
-    <link rel="stylesheet" href="css/default.css">
-    <link rel="stylesheet" href="css/jquery.dataTables.min.css">
-
+  <!-- body -->
+  <body>
+    <!-- table -->
     <section class="module">
-        <div class="container">
-            <div id="wrap-datatable">
-                <table id="datatable" style="width:100%">
-                </table>
-            </div>
+      <div class="container">
+        <div id="wrap-datatable">
+          <table id="datatable" style="width:100%"></table>
         </div>
-        </div>
+      </div>
     </section>
 
+    <!-- popup -->
     <div id="my_popup" class="well">
-        <div class="popup-editor-hidden">
-            <input id="index" name="index" type="hidden"></input>
-        </div>
-        <div class="popup-editor-header">
-            <label>이름 :</label>
-            <input id="name" name="name" type="text" class="popup-editor-name"></input>
-            <label>제목 :</label>
-            <input id="title" name="title" type="text" class="popup-editor-title"></input>
-        </div>
-        <div class="popup-editor-body">
-            <textarea id="editor" name="editor"></textarea>
-            <div id="distfile">&nbsp;</div>
-        </div>
-        <div class="popup-editor-footer">
-            <button onclick="board.uploadRow();">완료</button>
-            <button onclick="board.closePopup();">취소</button>
-        </div>
+      <div class="popup-editor-hidden">
+        <input id="index" name="index" type="hidden" />
+      </div>
+      <div class="popup-editor-header">
+        <label>이름 :</label>
+        <input id="name" name="name" type="text" class="popup-editor-name" />
+        <label>제목 :</label>
+        <input id="title" name="title" type="text" class="popup-editor-title" />
+      </div>
+      <div class="popup-editor-body">
+        <textarea id="editor" name="editor"></textarea>
+        <div id="distfile">&nbsp;</div>
+      </div>
+      <div class="popup-editor-footer">
+        <button onclick="board.uploadRow();">완료</button>
+        <button onclick="board.closePopup();">취소</button>
+      </div>
     </div>
 
     <!-- script -->
-    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"
-        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="https://unpkg.com/axios/dist/axios.min.js"></script>
-    <script type="text/javascript" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
-    <script type="text/javascript" src="https://cdn.datatables.net/select/1.2.6/js/dataTables.select.min.js"></script>
-    <script type="text/javascript" src="https://cdn.datatables.net/buttons/1.5.2/js/dataTables.buttons.min.js"></script>
-    <script type="text/javascript"
-        src="https://cdnjs.cloudflare.com/ajax/libs/jquery-popup-overlay/1.7.9/jquery.popupoverlay.js"></script>
-    <script type="text/javascript" src="https://cdn.ckeditor.com/ckeditor5/10.1.0/classic/ckeditor.js"></script>
-    <script type="text/javascript" src="https://momentjs.com/downloads/moment.js"></script>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://unpkg.com/axios/dist/axios.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.datatables.net/select/1.2.6/js/dataTables.select.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.datatables.net/buttons/1.5.2/js/dataTables.buttons.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery-popup-overlay/1.7.9/jquery.popupoverlay.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.ckeditor.com/ckeditor5/10.1.0/classic/ckeditor.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://momentjs.com/downloads/moment.js"
+    ></script>
     <script type="text/javascript" src="js/board.js"></script>
-</body>
-
+  </body>
 </html>

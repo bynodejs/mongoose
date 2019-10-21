@@ -142,20 +142,20 @@ const board = (function() {
       $("#my_popup").popup("hide");
     },
 
+    createRow: function(index) {
+      isFlag = "create";
+      $(".popup-editor-title").val("");
+      $(".popup-editor-name").val("");
+      ckEditor.setData("");
+      $("#my_popup").popup("show");
+    },
+
     editRow: function(index, title, name, content) {
       isFlag = "edit";
       $("#index").val(index);
       $(".popup-editor-title").val(title);
       $(".popup-editor-name").val(name);
       ckEditor.setData(content);
-      $("#my_popup").popup("show");
-    },
-
-    createRow: function(index) {
-      isFlag = "create";
-      $(".popup-editor-title").val("");
-      $(".popup-editor-name").val("");
-      ckEditor.setData("");
       $("#my_popup").popup("show");
     },
 
