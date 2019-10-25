@@ -3,7 +3,7 @@
 Index
 -----
 
-1. docker
+1. Docker
     -   리눅스의 응용 프로그램들을 소프트웨어 컨테이너 안에 배치시키는 일을 자동화하는 오픈 소스 프로젝트
         1. docker-compose up : 실행  /  docker-compose up -d : 백그라운드 실행
 
@@ -13,7 +13,7 @@ Index
 
         4. docker-compose down : 종료
 
-2. mongoDB
+2. NoSQL
     1. 장점
         - Flexibility : 스키마가 없는 구조라 어떤 형태의 데이터라도 저장할 수 있다.
 
@@ -51,12 +51,8 @@ Index
 
     - schema를 object 구조로 만든게 model이라고 생각하면 된다.
 
-4. robo 3t - mongodb GUI
-    - create dababase
-
-    - create collections
-
-    - insert document
+4. Database Tools
+    - <a href="https://robomongo.org/download">Robo 3T</a>
 
 5. mongoDB Cloud
     - <a href="https://www.mongodb.com/cloud/atlas">mongoDB Atlas</a>
